@@ -20,7 +20,10 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-     - run: echo $OWNER_NAME
+     - run:
+       name: "Echo command to print environment variable"
+         command: | 
+           echo $OWNER_NAME
 workflows:
   # Name the workflow "welcome"
   welcome:
