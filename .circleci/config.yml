@@ -9,12 +9,12 @@ jobs:
   print_hello:
     executor: 
 	  name: circleci/node:13.8.0
-	steps:
+    steps:
 	  - run: echo "hello "
   print_world:
     executor: 
 	  name: circleci/node:13.8.0
-	steps:
+    steps:
 	  run: echo "world"
 workflows:
   # Name the workflow "welcome"
