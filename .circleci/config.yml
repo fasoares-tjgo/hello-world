@@ -16,7 +16,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo "world"
-  print_owner_nem:
+  print_owner_name:
     docker:
       - image: circleci/node:13.8.0
     steps:
@@ -30,3 +30,6 @@ workflows:
       - print_world:
           requires:
             - print_hello
+      - print_owner_name
+          requires:
+            - print_world
