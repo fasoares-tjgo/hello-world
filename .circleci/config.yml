@@ -16,4 +16,4 @@ jobs:
           environment:
             OWNER_NAME_SET_IN_CIRCLECI: $OWNER_NAME
           command: |
-            echo $OWNER_NAME_SET_IN_CIRCLECI
+            echo ${CIRCLE_BRANCH}
