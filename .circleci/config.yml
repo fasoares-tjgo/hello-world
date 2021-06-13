@@ -13,5 +13,7 @@ jobs:
       - checkout
       - run:
           name: "echo an env var that is part of our project"
+          environment:
+            OWNER_NAME_SET_IN_CIRCLECI: $OWNER_NAME
           command: |
-            echo "Value is = " . $OWNER_NAME
+            echo "Value is = " . $OWNER_NAME_SET_IN_CIRCLECI
