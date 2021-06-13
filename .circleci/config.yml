@@ -30,6 +30,6 @@ workflows:
       - print_world:
           requires:
             - print_hello
-      - print_owner_name
+      - print_owner_name:
           requires:
             - print_world
