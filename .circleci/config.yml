@@ -14,6 +14,6 @@ jobs:
       - run:
           name: "echo an env var that is part of our project"
           environment:
-            OWNER_NAME_SET_IN_CIRCLECI: $OWNER_NAME
+            OWNER_NAME_SET_IN_CIRCLECI: Name is ${OWNER_NAME}
           command: |
-            echo "Value is = " . $OWNER_NAME_SET_IN_CIRCLECI
+            echo $OWNER_NAME_SET_IN_CIRCLECI
